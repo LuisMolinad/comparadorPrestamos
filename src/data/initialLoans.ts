@@ -1,0 +1,56 @@
+import type { LoanOffer } from '../types/loan';
+
+export const INITIAL_LOANS: LoanOffer[] = [
+  {
+    id: '1',
+    bankName: 'Banco Agrícola',
+    loanType: 'Hipotecario',
+    amount: 120000,
+    interestRate: 7.25,
+    termYears: 25,
+    upfrontFees: 1500,
+    monthlyFees: 5,
+    debtInsuranceRate: 0.05, // 0.05% mensual sobre saldo deudor
+    propertyInsurance: 22,   // $22 mensual seguro de daños
+    notes: 'Préstamo para vivienda con tasa fija los primeros 5 años y seguro de desgravamen incluido.',
+  },
+  {
+    id: '2',
+    bankName: 'BAC Credomatic',
+    loanType: 'Hipotecario',
+    amount: 120000,
+    interestRate: 7.00,
+    termYears: 25,
+    upfrontFees: 2000,
+    monthlyFees: 0,
+    debtInsuranceRate: 0.045,
+    propertyInsurance: 25,
+    notes: 'Tasa competitiva con comisión de desembolso ligeramente mayor y sin cobro de manejo.',
+  },
+  {
+    id: '3',
+    bankName: 'Banco Cuscatlán',
+    loanType: 'Hipotecario',
+    amount: 120000,
+    interestRate: 7.50,
+    termYears: 25,
+    upfrontFees: 800,
+    monthlyFees: 10,
+    debtInsuranceRate: 0.06,
+    propertyInsurance: 20,
+    notes: 'Comisión de apertura promocional baja y cuota de mantenimiento mensual.',
+  },
+  {
+    id: '4',
+    bankName: 'Davivienda El Salvador',
+    loanType: 'Hipotecario',
+    amount: 120000,
+    interestRate: 7.10,
+    termYears: 25,
+    upfrontFees: 1200,
+    monthlyFees: 0,
+    debtInsuranceRate: 0.05,
+    propertyInsurance: 22,
+    notes: 'Opción equilibrada con excelentes condiciones para compra de vivienda nueva o usada.',
+  },
+];
