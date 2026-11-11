@@ -4,7 +4,7 @@ Aplicación web interactiva moderna desarrollada con **React**, **TypeScript** y
 
 ---
 
-## 🚀 Características Principales
+## Características Principales
 
 - **Gestión Completa de Ofertas:** Agrega, edita y elimina ofertas de diferentes bancos o instituciones financieras.
 - **Visualización Dual:** Alterna entre una vista de **Tarjetas** detalladas o una **Tabla comparativa** completa.
@@ -20,7 +20,7 @@ Aplicación web interactiva moderna desarrollada con **React**, **TypeScript** y
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **React 19** / **React DOM**
 - **TypeScript** para tipado estático seguro.
@@ -31,7 +31,7 @@ Aplicación web interactiva moderna desarrollada con **React**, **TypeScript** y
 
 ---
 
-## 📦 Instalación y Uso
+## Instalación y Uso
 
 Asegúrate de tener instalado [Node.js](https://nodejs.org/) (versión 18 o superior recomendada) y un gestor de paquetes como `npm`, `pnpm` o `yarn`.
 
@@ -60,6 +60,6 @@ Asegúrate de tener instalado [Node.js](https://nodejs.org/) (versión 18 o supe
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto es de código abierto y está disponible bajo los términos de la licencia MIT.
