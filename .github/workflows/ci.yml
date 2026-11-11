@@ -11,19 +11,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Clone repository
+        run: |
+          git clone https://github.com/${{ github.repository }}.git .
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch origin pull/${{ github.event.pull_request.number }}/head:pr-branch
+            git checkout pr-branch
+          else
+            git checkout ${{ github.sha }}
+          fi
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: latest
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'pnpm'
+      - name: Enable Corepack and pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+          pnpm --version
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
